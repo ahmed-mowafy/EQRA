@@ -62,15 +62,6 @@ input:focus {
 	color: var(--sec-color);
     background-color: var(--main-color);
 }
-.see-btn {
-	color: wheat;
-	font-size: 28px;
-	display: block;
-	text-align: left;
-}
-.see-btn:hover {
-	color: var(--sec-color);
-}
 /* End components */
 /* Start Header */
 header {
@@ -84,7 +75,7 @@ header .container {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	height: 97px;
+	height: 99px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -113,26 +104,33 @@ header .container::after {
 	height: 1px;
 }
 header .logo {
-	width: 60px;
+	width: 70px;
 }
 header form {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-right: 10%;
+	margin-right: 5%;
 }
 header form:hover{
 	background: var(--main-color);
 }
 @media (max-width:767px) {
 	header form {
-		margin-left: -35%;
+		margin-left: -45%;
+		border-left: 1px solid white;
+	}	
+}
+@media (max-width:321px) {
+	header form {
+		margin-left: -25%;
 		border-left: 1px solid white;
 	}	
 }
 header form input {
 	color: white;
 	width: 300px;
+	font-size: 18px;
 	padding: 10px;
 	background: none;
 	border: 1px solid white;
@@ -146,12 +144,13 @@ header form input::placeholder {
 	header form input {
 		display: none;
 		width: 100%;
-		font-size: 12px;
+		font-size: 14px;
+		padding: 12px;
 	}
 }
 header form i {
 	color: white;
-	font-size: 19px;
+	font-size: 21px;
     padding: 10px;
     border: 1px solid white;
     border-right: none;
@@ -163,7 +162,7 @@ header form i:hover {
 @media (max-width:1200px) {
 	header form i {
 		border: none;
-		padding: 7px;
+		padding: 10px;
 	}
 }
 @media (max-width:1200px) {
@@ -212,6 +211,7 @@ header nav ul {
 		left: 0;
 		width: 200px;
 		background-color: black;
+		z-index: 2;
 	}
 	header nav:hover ul::after {
 		content: "";
@@ -266,7 +266,6 @@ header nav ul li a:hover{
     min-height: 100vh;
 	background-image: url(../images/glasses-1052010_1920.jpg);
 	background-size: cover;
-	background-position: center;
 	position: relative;
 }
 .landing::before {
@@ -416,8 +415,9 @@ header nav ul li a:hover{
 .books {
 	padding-top: var(--section-padding);
 	padding-bottom: var(--section-padding);
-	background-image: url(../images/books-1204029_1920.jpg);
+	background-image: url(../images/library-869061_1920.jpg);
 	background-size: cover;
+	background-position: center;
 	position: relative;
 }
 .books::before {
@@ -427,7 +427,7 @@ header nav ul li a:hover{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 .books .container {
 	position: relative;
@@ -474,6 +474,17 @@ header nav ul li a:hover{
 }
 .books .book-container .book p:not(:last-child) {
 	margin-bottom: 10px;
+}
+.books .see {
+	text-align: left;
+}
+.books .see .see-btn {
+	color: wheat;
+	font-size: 28px;
+	padding: 10px;
+}
+.books .see .see-btn:hover {
+	color: var(--sec-color);
 }
 /* End Books */
 /* Start Top Authers */
@@ -683,7 +694,7 @@ header nav ul li a:hover{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 91, 140, 0.6);
 }
 .contact .join-content h2 {
 	margin: 30px 0;
@@ -717,12 +728,13 @@ title {
 	color: black;
 	display: block;
 	width: 100%;
-	padding: 15px;
+	font-size: 28px;
+	padding: 10px;
     border:1px solid #ccc;
 }
 .contact .join-content .forms input[type="submit"] {
-	color: white;
-	background-color: var(--main-color);
+	color: var(--main-color);
+	background-color: white;
 	border: none;
 }
 .contact .join-content .forms input[type="submit"]:hover {
