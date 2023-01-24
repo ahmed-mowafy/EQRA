@@ -475,15 +475,15 @@ header nav ul li a:hover{
 .books .book-container .book p:not(:last-child) {
 	margin-bottom: 10px;
 }
-.books .see {
-	text-align: left;
-}
-.books .see .see-btn {
+.books .see-btn {
+	display: block;
+	width: fit-content;
 	color: wheat;
 	font-size: 28px;
 	padding: 10px;
+	float: left;
 }
-.books .see .see-btn:hover {
+.books .see-btn:hover {
 	color: var(--sec-color);
 }
 /* End Books */
